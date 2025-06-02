@@ -1,0 +1,120 @@
+body {
+  background: linear-gradient(135deg, #232526, #414345);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.calculator {
+  background: #222831;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 32px 28px 28px 28px;
+  width: 340px;
+}
+
+.display-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  background: #393e46;
+  border-radius: 10px;
+  padding: 10px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.operator-icon {
+  position: absolute;
+  font-size: 1.7em;
+  color: #00adb5;
+  margin-right: 14px;
+  width: 32px;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.display {
+  width: 300px;
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.numbers, .operators {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.numbers {
+  flex: 2;
+  flex-wrap: wrap;
+  max-width: 225px;
+  gap: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 68px);
+}
+.numbers button:nth-last-child(2) {
+  grid-column: span 2;
+}
+
+.operators {
+  flex: 1;
+  gap: 10px;
+}
+
+button {
+  background: #393e46;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3em;
+  padding: 14px 0;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+button:active {
+  background: #00adb5;
+  color: #222831;
+  transform: scale(0.97);
+}
+
+button#equals {
+  background: #00adb5;
+  color: #222831;
+  font-weight: bold;
+}
+
+button#clear {
+  background: #f38181;
+  color: #fff;
+}
+
+button#backspace {
+  background: #aaa;
+  color: #222831;
+}
+
+button#plus-minus {
+  background: #222831;
+  color: #00adb5;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}

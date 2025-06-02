@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fancy Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display-section">
+      <aside class="operator-icon" id="operatorIcon">+</aside>
+      <input type="text" class="display" id="display" readonly>
+    </div>
+    <div class="buttons">
+      <div class="numbers">
+        
+        <button id="clear" title="Clear"><span>AC</span></button>
+        
+        <button data-op="%" title="Modulus"><span>%</span></button>
+        <button id="backspace" title="Backspace"><span>⌫</span></button>
+        <button data-num="7">7</button>
+        <button data-num="8">8</button>
+        <button data-num="9">9</button>
+        <button data-num="4">4</button>
+        <button data-num="5">5</button>
+        <button data-num="6">6</button>
+        <button data-num="1">1</button>
+        <button data-num="2">2</button>
+        <button data-num="3">3</button>
+        <button data-num="0">0</button>
+        <button data-num=".">.</button>
+      </div>
+      <div class="operators">
+        <button data-op="+" title="Add"><span>+</span></button>
+        <button data-op="-" title="Subtract"><span>−</span></button>
+        <button data-op="*" title="Multiply"><span>×</span></button>
+        <button data-op="/" title="Divide"><span>÷</span></button>
+        <button id="equals" title="Equals"><span>=</span></button>
+
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
