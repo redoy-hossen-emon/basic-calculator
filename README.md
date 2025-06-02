@@ -20,7 +20,7 @@ This is a simple AI-powered calculator built to perform basic arithmetic operati
 
 ## 📷 Preview
 
-
+https://raw.githubusercontent.com/redoy-hossen-emon/basic-calculator/refs/heads/main/Annotation%202025-06-02%20094422.png
 
 ## 📁 How to Use
 
